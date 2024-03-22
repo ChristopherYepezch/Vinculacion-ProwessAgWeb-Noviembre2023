@@ -1,0 +1,53 @@
+/* Estilos para el contenedor del formulario de inicio de sesión */
+.login-container {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid #FF8C00;
+  border-radius: 5px;
+  background-color: rgba(47, 134, 166, 0.832);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 300px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilos para el título del formulario */
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilos para los campos de entrada */
+.login-input {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #e28c1c;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.login-input::placeholder {
+  color: #999;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}

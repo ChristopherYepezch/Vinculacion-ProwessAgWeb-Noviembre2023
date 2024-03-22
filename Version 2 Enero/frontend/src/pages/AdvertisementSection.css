@@ -1,0 +1,61 @@
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Espacio entre las filas, ajusta según sea necesario */
+}
+
+
+
+.advertisement-section {
+  margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+}
+
+.advertisement-image {
+  max-width: 49%; /* La imagen no superará el ancho del contenedor padre */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+  border: orange; /* Añade un borde si lo deseas */
+  border-radius: 5px; /* Añade esquinas redondeadas si lo deseas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave si lo deseas */
+}
+
+/* Estilos para el título "ANUNCIOS" */
+h1 {
+  color: white;
+  text-shadow: -1px -1px 0 greenyellow,
+    /* Sombra en la esquina superior izquierda (x, y, tamaño, color) */ 1px -1px
+      0 orange,
+    /* Sombra en la esquina superior derecha (x, y, tamaño, color) */ -1px 1px 0
+      orange,
+    /* Sombra en la esquina inferior izquierda (x, y, tamaño, color) */ 1px 1px
+      0 orange;
+}
+
+p {
+  text-align: center; 
+  color: white;
+}
+
+/* Estilos para los enlaces de redes sociales */
+.footer-content a {
+  margin-right: 10px; /* Ajusta el espacio entre los iconos de redes sociales */
+  display: inline-block; /* Permite ajustar márgenes y alineaciones */
+  transition: transform 0.3s ease; /* Agrega una transición suave al pasar el mouse */
+}
+
+/* Estilos para cambiar la escala al pasar el mouse sobre los enlaces */
+.footer-content a:hover {
+  transform: scale(1.2); /* Ajusta la escala al pasar el mouse para dar un efecto de crecimiento */
+}
+
+/* Estilos para las imágenes de redes sociales */
+.footer-content img {
+  width: 30px; /* Ajusta el ancho según tus preferencias */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+  border-radius: 50%; /* Da a las imágenes un borde redondeado */
+}
+

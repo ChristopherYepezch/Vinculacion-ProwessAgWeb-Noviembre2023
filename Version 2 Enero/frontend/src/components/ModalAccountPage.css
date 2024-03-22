@@ -1,0 +1,39 @@
+/* Estilos para el Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para oscurecer el fondo externo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(8px); /* Agrega el efecto de desenfoque */
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  .modal-open {
+    overflow: hidden; /* Inhabilita el desplazamiento cuando el modal está abierto */
+  }
+
+  .modal-content {
+    background-color: rgba(47, 134, 166);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 400px;
+    color: white; 
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+  }
+  

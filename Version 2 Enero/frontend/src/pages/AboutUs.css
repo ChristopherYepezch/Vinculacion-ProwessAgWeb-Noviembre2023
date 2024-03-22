@@ -1,0 +1,133 @@
+.AboutUsInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+.AboutUsInfo h1 {
+  color: white;
+  text-shadow: -1px -1px 0 greenyellow,
+    /* Sombra en la esquina superior izquierda (x, y, tamaño, color) */ 1px -1px
+      0 orange,
+    /* Sombra en la esquina superior derecha (x, y, tamaño, color) */ -1px 1px 0
+      orange,
+    /* Sombra en la esquina inferior izquierda (x, y, tamaño, color) */ 1px 1px
+      0 orange;
+    margin-top: -60px;
+}
+
+.AboutUsInfo h2 {
+  text-shadow: -1px -1px 0 #000,
+    /* Sombra en la esquina superior izquierda (x, y, tamaño, color) */ 1px -1px
+      0 #000,
+    /* Sombra en la esquina superior derecha (x, y, tamaño, color) */ -1px 1px 0
+      #000,
+    /* Sombra en la esquina inferior izquierda (x, y, tamaño, color) */ 1px 1px
+      0 #000;
+}
+
+.AboutUsInfo p {
+  text-align: justify;
+  justify-content: center;
+  color: white;
+}
+.about-section {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  text-align: center;
+  gap: 25px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(
+    47,
+    134,
+    166,
+    0.3
+  ); /* Color de fondo con transparencia */
+  border: 2px solid orange;
+  color: white;
+}
+
+.mision,
+.objetives {
+  max-width: 90%;
+  max-height: auto;
+  margin: 5px;
+  text-align: justify;
+}
+
+.about-image {
+  display: block;
+  margin: 0 auto; /* Centrar horizontalmente */
+  align-self: center; /* Centrar verticalmente */
+  max-width: 250px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .AboutUsInfo {
+    padding: 60px;
+    max-width: 65%;
+    margin: 0 auto;
+  }
+
+  .product-grid {
+    flex-direction: row;
+  }
+
+  .about-section {
+    margin-bottom: 40px;
+  }
+
+  .product-item {
+    flex-direction: column;
+  }
+
+  .product-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .product-grid {
+    display: flex;
+    justify-content: center;
+  }
+
+  h2,
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .AboutUsInfo {
+    padding: 30px; /* Ajuste de espaciado para pantallas medianas */
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr; /* Cambio a una sola columna en pantallas pequeñas */
+    text-align: center;
+    gap: 15px; /* Reducción del espacio entre elementos */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px; /* Ajuste de márgenes para pantallas medianas */
+    background-color: rgba(47, 134, 166, 0.3);
+    border: 2px solid orange;
+    color: white;
+  }
+
+  h2,
+  h3 {
+    font-size: 20px; /* Reducción del tamaño de fuente para pantallas pequeñas */
+  }
+}

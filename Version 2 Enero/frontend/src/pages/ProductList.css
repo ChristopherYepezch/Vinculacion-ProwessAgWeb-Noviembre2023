@@ -1,0 +1,216 @@
+body {
+    color: #fff;
+}
+
+.container-product-list {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(47, 134, 166, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #FF8C00; /* Borde de 3px de ancho y color azul */
+
+}
+
+.header-row-product-list {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    cursor:pointer;
+}
+
+.container-products {
+    display: grid;
+    gap: 20px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    gap: 1rem; /* Espacio entre columnas */
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #000,
+        /* Sombra en la esquina superior izquierda (x, y, tamaño, color) */
+        1px -1px 0 #000,
+        /* Sombra en la esquina superior derecha (x, y, tamaño, color) */
+        -1px 1px 0 #000,
+        /* Sombra en la esquina inferior izquierda (x, y, tamaño, color) */
+        1px 1px 0 #000;
+    /* Sombra en la esquina inferior derecha (x, y, tamaño, color) */
+}
+
+b {
+    text-shadow:
+        -1px -1px 0 #000,
+        /* Sombra en la esquina superior izquierda (x, y, tamaño, color) */
+        1px -1px 0 #000,
+        /* Sombra en la esquina superior derecha (x, y, tamaño, color) */
+        -1px 1px 0 #000,
+        /* Sombra en la esquina inferior izquierda (x, y, tamaño, color) */
+        1px 1px 0 #000;
+    /* Sombra en la esquina inferior derecha (x, y, tamaño, color) */
+}
+
+.btn-add-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.btn-add-product {
+    height: 50px;
+    width: 170px;
+    background: linear-gradient(45deg, orange, #FF8C00);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    border-width: 0px;
+    top: 80%;
+    font-size: 19px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.btn-add-product:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.actions-container {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-icon-trash {
+    margin-left: 3px;
+    font-size: 1.5em;
+    color: rgb(255, 41, 41);
+    cursor: pointer;
+}
+
+.fa-icon-trash:hover {
+    color: rgb(255, 0, 0);
+}
+
+.fa-icon-trash:active {
+    color: #cc0000;
+}
+
+.fa-icon-edit {
+    margin-right: 3px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-icon-edit:hover {
+    color: rgb(159, 226, 255);
+}
+
+.fa-icon-edit:active {
+    color: rgb(127, 179, 201);
+}
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-shadow:
+        -1px -1px 0 #000,
+        /* Sombra en la esquina superior izquierda (x, y, tamaño, color) */
+        1px -1px 0 #000,
+        /* Sombra en la esquina superior derecha (x, y, tamaño, color) */
+        -1px 1px 0 #000,
+        /* Sombra en la esquina inferior izquierda (x, y, tamaño, color) */
+        1px 1px 0 #000;
+    /* Sombra en la esquina inferior derecha (x, y, tamaño, color) */
+}
+
+.filter-row label {
+    margin-right: 10px;
+}
+
+.filter-row input[type='text'] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.filter-row input[type='text']:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pagination button:hover {
+    background-color: #FF8C00;
+}
+
+.pagination span {
+    font-size: 16px;
+    margin: 0 10px;
+}
+/* Consultas de medios para pantallas de 300px, 500px y 700px */
+@media (max-width: 700px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .product {
+        display: grid;
+        grid-template-columns: 3fr 3fr 2fr 3fr 3fr  3fr 3fr 3fr 3fr;
+        border: 1px solid orange;
+        border-radius: 5px;
+        padding: 10px;
+        align-items: center;
+        gap: 1rem; /* Espacio entre columnas */
+    }
+}
+
+.product-image-list {
+    margin-right: 0;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .sorted{
+    cursor:default;
+    color:orange;
+  }

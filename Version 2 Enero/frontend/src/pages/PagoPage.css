@@ -1,0 +1,198 @@
+
+
+/* PagoPage.css */
+
+body {
+  font-family: 'Electrolize', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.AboutUsInfo h1 {
+  color: white;
+  text-shadow: -1px -1px 0 greenyellow,
+    1px -1px 0 orange,
+    -1px 1px 0 orange,
+    1px 1px 0 orange;
+  margin-top: -60px;
+}
+
+.pagopage {
+  width: 90%; /* Cambié el ancho a 90% para hacerlo más delgado */
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(47, 134, 166, 0.3);
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #FF8C00;
+}
+
+.pagopage h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.pagopage p {
+  margin: 10px 0;
+}
+
+.pagopage input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.pagopage button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #FF8C00;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagopage button:hover {
+  background-color: #ffa000;
+}
+
+.pagopage-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.pagopage-image {
+  width: 70px;
+  height: auto;
+  margin: 0 10px;
+  margin-top: 30px;
+}
+
+.pagopage-factura-container {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 50em;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  display: grid;
+  background-color: rgba(47, 134, 166, 0.3);
+  /*background-color: rgba(47, 134, 166, 0.3);*/
+  border: 2px solid orange;
+  color: white;
+  text-align: center; /* Agregado para centrar el contenido */
+}
+
+.pagopage-factura-container img {
+  width: 100%; /* Hace la imagen ocupar el 100% del ancho del contenedor */
+  max-width: 500px; /* Establece un ancho máximo para la imagen si es necesario */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+  display: block; /* Elimina el espacio adicional debajo de la imagen */
+}
+
+
+.pagopage-factura-datos {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pagopage-factura-label {
+  font-weight: bold;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+}
+
+.pagopage-gracias {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.seguir-comprando {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 30px auto;
+  background-color: #008CBA;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.seguir-comprando:hover {
+  background-color: #007B9A;
+}
+
+/* Estilos copiados y adaptados para pantallas de 750px o menos */
+@media (max-width: 750px) {
+  .pagopage {
+    width: 100%;
+    margin: 15px;
+  }
+
+  .pagopage input,
+  .pagopage button {
+    margin: 5px;
+  }
+}
+.btn-buy {
+  margin-left: 670px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  
+  }
+  
+  .img-producto-factura {
+  
+  width: 180px;
+  margin-left: 315px;
+  margin-bottom: 30px;
+  margin-top: -15px;
+  }
+
+  .progress-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Ajusta el ancho de la barra de progreso */
+    height: 10px; /* Ajusta la altura de la barra de progreso */
+    padding: 20px 0;
+    margin-top: 50px; /* Ajusta la posición vertical de la barra de progreso */
+    background: #ddd;
+    border-radius: 5px; /* Ajusta el radio de la esquina de la barra de progreso */
+    position: relative;
+  }
+  
+  .progress-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #4caf50;
+  }
+  
+  .progress-fill.done {
+    width: 66%; /* Cambia este valor para ajustar el progreso */
+  }
+  
+  .progress-step {
+    width: 30%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .progress-step p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -30px;
+  }

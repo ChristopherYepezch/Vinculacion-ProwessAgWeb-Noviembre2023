@@ -1,0 +1,173 @@
+/* VendorsPage.css */
+
+.vendors-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.search-bar select {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.vendor-list {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+  grid-template-columns: 250px 250px 250px 250px 250px;
+  grid-template-rows: auto;
+}
+
+.vendor-card {
+  width: 200px;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 8px;
+  background-color: rgb(47, 134, 166);
+  border: 1px solid orange;
+  color: white;
+  text-align: center;
+}
+
+.vendor-card img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.vendor-card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.vendor-card p {
+  margin: 0;
+  color: #fff;
+}
+
+.whatsapp-button {
+  background-color: #4ac959;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button:hover {
+  background-color: #449b50;
+}
+
+.add-vendor-button{
+  height: 50px;
+  width: 170px;
+  background: linear-gradient(45deg, orange, #FF8C00);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  border-width: 0px;
+  top: 80%;
+  font-size: 19px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.delete-button {
+  margin-left: 3px;
+  font-size: 1.5em;
+  color: rgb(255, 41, 41);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.delete-button:hover {
+  color: rgb(255, 0, 0);
+}
+
+.delete-button:active {
+  color: #cc0000;
+}
+
+.edit-button {
+  margin-right: 3px;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.edit-button:hover {
+  color: rgb(159, 226, 255);
+}
+
+.edit-button:active {
+  color: rgb(127, 179, 201);
+}
+@media screen and (max-width: 900px) {
+  .vendor-list {
+    grid-template-columns: repeat(3, 225px); /* Cambiamos a dos columnas de 225px cada una para pantallas de 750px a 850px */
+    justify-content: center; /* Centramos las tarjetas en la pantalla */
+  }
+
+  .vendor-card {
+    max-width: 150px; /* Limitamos el ancho máximo a 225px para pantallas de 750px a 850px */
+    width: 100%; /* Ajustamos el ancho de la tarjeta al 100% del contenedor */
+    margin: 5px; /* Aumentamos el margen para separar las tarjetas del borde */
+  }
+
+  .vendor-card h3 {
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+
+  .vendor-card p {
+    font-size: 10px; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vendor-list {
+    grid-template-columns: repeat(2, 200px); /* Cambiamos a dos columnas de 200px cada una */
+    justify-content: center; /* Centramos las tarjetas en la pantalla */
+  }
+
+  .vendor-card {
+    max-width: 150px; /* Limitamos el ancho máximo a 200px */
+    width: 100%; /* Ajustamos el ancho de la tarjeta al 100% del contenedor */
+    margin: 5px; /* Aumentamos el margen para separar las tarjetas del borde */
+  }
+
+  .vendor-card h3 {
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+
+  .vendor-card p {
+    font-size: 10px; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+}

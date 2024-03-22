@@ -1,0 +1,172 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../imagenes/fondo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .home-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .home-page-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(
+      47,
+      134,
+      166,
+      0.6
+    ); /* Color de fondo con transparencia */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    border-radius: 10px;
+  }
+  
+  .home-page-subtitle {
+    flex-basis: 50%;
+    padding: 20px;
+    color: white;
+  }
+  
+  .home-page-subtitle h2 {
+    font-size: 46px;
+    font-weight: bold;
+  }
+  
+  .home-page-subtitle p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .home-page-carousel {
+    flex-basis: 50%;
+    padding: 20px;
+  }
+  
+  .home-page-carousel .carousel .slider-wrapper .slider .slide {
+    position: relative;
+  }
+  
+  .home-page-carousel .carousel .slider-wrapper .slider .slide img {
+    width: 100%;
+    height: 300px; /* Establece la altura deseada para todas las imágenes */
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 0px solid #ccc;
+    border-radius: 20px;
+  }
+  .carousel .carousel-status {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+    color: #fff;
+  }
+  .part2 {
+    text-align: center;
+    color: #fff;
+  }
+  .p1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .RegistroHome {
+    height: 50px;
+    width: 170px;
+    background: linear-gradient(45deg, orange, #ff8c00);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-width: 0px;
+    top: 80%;
+    font-size: 19px;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  .paragraphs-container,
+  .paragraph {
+    /* ...resto de estilos */
+    padding: 1em; /* Añade un poco de relleno para espacio */
+  }
+  
+  .RegistroHome:hover {
+    transform: scale(1.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .paragraphs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .paragraph {
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+    margin: 10px 10px 0px 100px;
+    background: rgba(47, 134, 166, 0.6);
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .paragraph img {
+    width: 150px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 150px;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+  }
+  
+  .paragraph p {
+    flex-grow: 1; /* Permite que el texto ocupe todo el espacio restante */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home-page-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .home-page-subtitle,
+    .home-page-carousel {
+      flex-basis: 100%;
+    }
+  
+    .paragraphs-container {
+      flex-direction: column;
+    }
+  
+    .paragraph img {
+      max-width: 100%; /* Limita el tamaño máximo de la imagen al ancho del contenedor */
+      height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    /* Si deseas ajustar el tamaño de fuente del párrafo en pantallas más pequeñas, puedes agregar esto: */
+    .paragraph p {
+      font-size: 14px; /* Ajusta el tamaño de fuente según tus necesidades */
+    }
+  
+    /* Si deseas ajustar los márgenes en pantallas más pequeñas, puedes agregar esto: */
+    .paragraph {
+      margin: 10px 5px; /* Ajusta los márgenes superior e inferior y los márgenes laterales */
+    }
+  
+    /* Si deseas centrar el botón en pantallas más pequeñas, puedes agregar esto: */
+    .RegistroHome {
+      margin-top: 20px;
+      top: initial;
+      margin: 10px auto; /* Centra horizontalmente el botón */
+    }
+  }
+  

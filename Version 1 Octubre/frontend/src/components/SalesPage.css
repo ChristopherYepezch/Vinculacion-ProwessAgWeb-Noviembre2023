@@ -1,0 +1,64 @@
+.ul-customers {
+  list-style: none;
+  background-color: rgba(47, 134, 166, 0.6);
+  padding: 20px;
+  margin: 0;
+}
+
+.li-customers {
+  background-color: rgba(47, 134, 166, 0.6);
+  padding: 20px;
+}
+
+.fa-user-customer {
+  font-size: 2em;
+}
+
+.sales-page {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sales-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sales-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.sales-item:hover {
+  background-color: #f9f9f9;
+}
+
+.sale-link {
+  text-decoration: none;
+  color: #333;
+}
+  
+
+/* ESTILOS DE GPT*/
+
+.li-customers {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.li-customers > a {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.li-customers > a:hover {
+  color: #007bff;
+}

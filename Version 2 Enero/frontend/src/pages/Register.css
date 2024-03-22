@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Oswald&family=Roboto:wght@300&display=swap');
+
+.register-container {
+  font-family: 'Electrolize', sans-serif;
+  width: 30em;
+  margin: 0 auto;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  padding: 20px;
+  border-radius: 1%;
+  background-color: rgba(47, 134, 166, 0.3);
+  color: white;
+  border: 1px solid #FF8C00;
+}
+
+.register-container-2 {
+  display: flex;
+}
+
+.register-container-2>input {
+  width: 50%;
+  margin-right: 0.3625em;
+  margin-bottom: 0.625rem;
+}
+
+.register-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-input {
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-inputS {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-input[type="file"] {
+  padding: 0;
+  width: 100%;
+}
+
+.custom-file-input-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.register-input-image {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.custom-file-input-label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  background: linear-gradient(45deg, rgb(0, 110, 255), #ff8c00);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button.valid {
+  background: linear-gradient(45deg, rgb(0, 110, 255), #ff8c00) !important;
+  color: white !important;
+}
+
+.register-input[type="file"]::-webkit-file-upload-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #45a049;
+
+}
+
+.register-image-container {
+  text-align: center;
+}
+
+.register-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  max-height: 200px;
+  object-fit: cover;
+  object-fit: contain;
+  /* Ajusta el tamaño máximo de la imagen según tus preferencias */
+}
+
+.image-show {
+
+  max-width: 150px;
+  min-width: 150px;
+  max-height: auto;
+  margin-top: 20px;
+  margin-left: 150px; 
+}
+
+.error-message {
+  color: white;
+  margin-top: -8px;
+  margin-bottom: 1px;
+  padding: 5px;  
+}
+
+.vendedor-section label {
+  font-size: 20px;
+  color: #ECF0F1;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease; /* Añade transición para opacidad */
+  background: linear-gradient(45deg, rgb(0, 110, 255), #ff8c00);
+  border-radius: 4px;
+  cursor: pointer;
+  width: 90%; /* Ocupa todo el ancho del contenedor */
+  float: left;
+}
+
+/* Estilos para el checkbox */
+.vendedor-section input[type="checkbox"] {
+  transform: scale(2); /* Ajusta el tamaño del checkbox */
+  margin-left: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.vendedor-section label:hover {
+  background-color: rgba(0, 153, 255, 0.8); /* Hace el color de fondo semi-transparente */
+  color: #ECF0F1;
+  opacity: 1; /* Cambia la opacidad al pasar el mouse */
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px; /* Ajusta este valor según sea necesario */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

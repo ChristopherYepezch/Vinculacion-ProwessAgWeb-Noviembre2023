@@ -1,0 +1,139 @@
+.my-account-page {
+  padding: 20px;
+}
+
+.my-account-page-title {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Contenedor de los elementos de la página */
+.vendor-info {
+  max-width: 850px;
+  max-height: auto;
+  display: grid;
+  grid-template-areas:
+    "image-inf image-inf image-inf"
+    "data-inf text-inf text-inf"; /* Ajusta el grid para que la imagen aparezca arriba y el resto abajo */
+  margin: 0 auto;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(47, 134, 166, 0.6);
+  color: white;
+}
+
+
+.buyer-info {
+  max-width: 850px;
+  max-height: auto; /* Ajusta el grid para que la imagen aparezca arriba y el resto abajo */
+  margin: 0 auto;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(47, 134, 166, 0.6);
+  color: white;
+  
+}
+
+.my-account-container{
+  border: 3px solid #FF8C00; /* Borde de 3px de ancho */
+}
+
+/* Imagen del usuario */
+.my-account-img {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  margin: 5px;
+  padding: 5px;
+  grid-area: image-inf;
+}
+
+.info-image {
+  max-width: 300px;
+  max-height: auto;
+  border-radius: 50%;
+  border: 4px solid #000;
+}
+/* Información de la cuenta */
+.buyer-info .my-account-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  grid-area: data-inf;
+}
+
+.my-account-info {
+  color: #000;
+  background-color: #f1d8d8;
+  border-radius: 8px;
+  text-align: center;
+  border: 0px solid #000  ;
+}
+
+.my-account-info p{
+  color: #000;
+  text-align: center;
+}
+
+.my-account-info h2 {
+  text-align: center;
+  font-size: 24px; 
+  color: white; /* Color del texto */
+  text-shadow: 
+    -1px -1px 0 #000, /* Sombra en la esquina superior izquierda (x, y, tamaño, color) */
+    1px -1px 0 #000, /* Sombra en la esquina superior derecha (x, y, tamaño, color) */
+    -1px 2px 0 #000, /* Sombra en la esquina inferior izquierda (x, y, tamaño, color) */
+    1px 2px 0 #000; /* Sombra en la esquina inferior derecha (x, y, tamaño, color) */
+}
+
+/* Texto de relleno */
+.my-account-text {
+  grid-area: text-inf;
+  margin: 5px;
+  padding: 5px;
+  text-align: justify;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.user-type-buttons {
+  text-align: center;
+}
+
+.user-type-button {
+  padding: 15px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.user-type-button:hover {
+  background-color: #FF8C00;
+}
+
+.button.whatsapp-button{
+  text-align: center;
+}

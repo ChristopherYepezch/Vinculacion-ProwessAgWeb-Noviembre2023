@@ -1,0 +1,31 @@
+.footer {
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 42px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.icon {
+  max-width: 45px;
+  filter: invert(100%);
+}
+a {
+  color: #fff;
+}
+.social-media a {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .social-media a {
+    margin-right: 0px;
+    margin: 2px;
+  }
+}
